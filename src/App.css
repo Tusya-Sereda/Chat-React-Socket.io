@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerBlock {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.col-6 {
+    height: 35px;
+    width: 200px;
+}
