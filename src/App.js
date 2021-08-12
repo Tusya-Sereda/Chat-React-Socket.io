@@ -54,7 +54,12 @@ function App() {
 
   return (
     <div className="App">
-      {" "}
+      <div className="circles">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="dot blue"></span>
+      </div>
       {!state.joined ? (
         <FormEntrance onLogin={onLogin} />
       ) : (

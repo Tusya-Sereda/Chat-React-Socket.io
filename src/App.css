@@ -1,44 +1,89 @@
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #root {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .App {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circles {
+  display: flex;
+  flex-flow: row wrap;
+  height: 70%;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
 }
 
 .registerBlock {
-    height: 60%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  position: absolute;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  border: 1px solid #fff;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 input {
-    width: 400px;
-    height: 40px;
-    margin-bottom: 20px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  outline: none;
 }
 
 .col-6 {
-    height: 35px;
-    width: 200px;
+  height: 35px;
+  width: 200px;
+}
+
+.dot {
+  position: relative;
+  height: 500px;
+  width: 200px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  background: #000;
+  filter: blur(80px);
+  opacity: 0.75;
+}
+
+.dot.blue {
+  background: #01b2fe;
+}
+
+.dot.green {
+  background: #00c456;
+}
+
+.dot.red {
+  background: #ff008c;
+}
+.dot.yellow {
+  background: #ffcd00;
 }

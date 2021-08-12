@@ -1,65 +1,84 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    outline: none;
-    color: black;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+  color: black;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .App {
-    max-width: 100%;
-    margin: 100px auto;
-    min-width: 720px;
+  max-width: 100%;
+  margin: 100px auto;
+  min-width: 720px;
 }
 
 .chat {
-    width: 900px;
-    display: flex;
-    height: 600px;
-    border: 1px solid rgba(159, 183, 197, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
+  position: absolute;
+  width: 900px;
+  display: flex;
+  height: 500px;
+  border: 1px solid rgba(159, 183, 197, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .chat-users {
-    border-right: 1px solid rgba(159, 183, 197, 0.1);
-    padding: 20px;
-    width: 200px;
-    background-color: #f6f9fa;
+  border-right: 1px solid rgba(159, 183, 197, 0.1);
+  padding: 20px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .chat-messages {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .messages {
-    flex: 1;
-    height: calc(100% - 150px);
-    overflow: auto;
+  flex: 1;
+  height: calc(100% - 150px);
+  overflow: auto;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .message {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .message p {
-    display: inline-flex;
-    border-radius: 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #bf79f8;
-    color: aliceblue;
-    padding: 10px 15px 15px;
+  display: inline-flex;
+  border-radius: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #bf79f8;
+  color: aliceblue;
+  padding: 10px 15px 15px;
 }
 
 span {
-    opacity: 0.4;
+  opacity: 0.4;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: #bf79f8;
+  margin-top: 10px;
 }

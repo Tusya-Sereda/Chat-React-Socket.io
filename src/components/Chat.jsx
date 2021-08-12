@@ -33,15 +33,14 @@ export const Chat = ({ users, messages, name, roomId, onAddMessage }) => {
       </div>
       <div className="chat-messages">
         <div ref={messagesRef} className="messages">
-          {messages?.length &&
-            messages.map((message) => (
-              <div className="message">
-                <p>{message.text}</p>
-                <div>
-                  <span>{message.name}</span>
-                </div>
+          {messages?.map((message) => (
+            <div className="message">
+              <p>{message.text}</p>
+              <div>
+                <span>{message.name}</span>
               </div>
-            ))}
+            </div>
+          ))}
         </div>
         <form>
           <textarea
